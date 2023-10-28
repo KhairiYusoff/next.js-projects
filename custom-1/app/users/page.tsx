@@ -3,7 +3,8 @@ import ProductCard from '../components/ProductCard'
 
 interface User {
   id:number,
-  name: string
+  name: string,
+  email: string
 }
 
 const UsersPage = async () => {
@@ -18,7 +19,7 @@ const UsersPage = async () => {
     <>
     <h1>Users</h1>
     <p>{new Date().toLocaleTimeString()}</p>
-    <table>
+    <table className='table table-bordered'>
       <thead>
         <tr>
           <th>Name</th>
@@ -27,8 +28,8 @@ const UsersPage = async () => {
       </thead>
       <tbody>
       {users.map(user=><tr key={user.id}>
-        <th>{user.name}</th>
-        <th>{user.email}</th>
+        <td>{user.email}</td>
+        <td>{user.name}</td>
       </tr>)}
 
       </tbody>
