@@ -40,8 +40,7 @@ const links = [
 ];
 
 const Navbar = () => {
-<<<<<<< HEAD
-  const session = useSession();
+  // const session = useSession();
 
   return (
     <div className={styles.container}>
@@ -49,27 +48,20 @@ const Navbar = () => {
         khairi
       </Link>
       <div className={styles.links}>
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
           </Link>
         ))}
-        {session.status === "authenticated" && (
+        {/* {session.status === "authenticated" && (
           <button className={styles.logout} onClick={signOut}>
             Logout
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );
 };
 
 export default Navbar;
-=======
-  return (
-    <div>MyNavbar</div>
-  )
-}
-
-export default Navbar
->>>>>>> 24e22c2245bdc6898794c774caab64314089d687
