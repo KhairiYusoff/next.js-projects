@@ -40,6 +40,7 @@ const links = [
 ];
 
 const Navbar = () => {
+<<<<<<< HEAD
   const session = useSession();
 
   return (
@@ -64,3 +65,11 @@ const Navbar = () => {
 };
 
 export default Navbar;
+=======
+  return (
+    <div>MyNavbar</div>
+  )
+}
+
+export default Navbar
+>>>>>>> 24e22c2245bdc6898794c774caab64314089d687
