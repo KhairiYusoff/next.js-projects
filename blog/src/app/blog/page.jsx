@@ -8,8 +8,10 @@ async function getData() {
         cache: "no-store",
     });
 
+    console.log(res)
+
     if (!res.ok) {
-        throw new Error("Failed to fetch data");
+        throw new Error("Failed to fetch data bro khairi!!");
     }
 
     return res.json();
