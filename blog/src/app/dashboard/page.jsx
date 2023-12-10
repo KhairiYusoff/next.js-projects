@@ -101,6 +101,7 @@ const Dashboard = () => {
                                     <Image src={post.img} alt="" width={200} height={100} />
                                 </div>
                                 <h2 className={styles.postTitle}>{post.title}</h2>
+                                <p className={styles.postTitle}>{post.desc}</p>
                                 <span
                                     className={styles.delete}
                                     onClick={() => handleDelete(post._id)}
