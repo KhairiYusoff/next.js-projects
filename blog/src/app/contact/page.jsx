@@ -4,8 +4,8 @@ import Image from "next/image";
 import Button from "@/components/Button/Button";
 
 export const metadata = {
-    title: "Khairi Contact Information",
-    description: "This is Contact Page",
+    title: "Contact",
+    description: "Reach out for collaborations or inquiries. Let's connect to discuss opportunities, ideas, and feedback for my blog. I'm here to engage with readers and fellow bloggers alike.",
 };
 
 const Contact = () => {
