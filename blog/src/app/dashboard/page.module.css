@@ -9,15 +9,15 @@
 
 .post {
   display: flex;
-  align-items: center;
+  align-items: flex-start; 
   justify-content: space-between;
   margin: 50px 0px;
 }
 
 .imgContainer {
-  width: 200px;
+  width: 200px; 
   height: 100px;
-  position: Ū;
+  position: relative; 
 }
 
 .img {
@@ -55,4 +55,9 @@
   border-radius: 5px;
   color: #eee;
   font-weight: bold;
+}
+
+.postTitle {
+  flex-grow: 1; 
+  margin:0 10px; 
 }
