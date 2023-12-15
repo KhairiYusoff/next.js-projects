@@ -9,21 +9,20 @@ export const metadata = {
 };
 
 async function getData() {
-    const res = await fetch("http://localhost:3000/api/posts", {
-        cache: "no-store",
-    });
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/posts`, { cache: "no-store" });
 
     console.log(res)
 
     if (!res.ok) {
-        throw new Error("Failed to fetch data bro khairi!!");
+        throw new Error("Failed to fetch data!!");
     }
 
     return res.json();
 }
 
 const Blog = async () => {
-    const data = await getData();
+     const data = await getData()
     return (
         <div className={styles.mainContainer}>
             {data.map((item) => (
