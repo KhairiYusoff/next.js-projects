@@ -6,10 +6,6 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Dashboard",
-  description: "This is Dashboard Page",
-};
 
 const Dashboard = () => {
   //OLD WAY TO FETCH DATA
@@ -36,6 +32,17 @@ const Dashboard = () => {
   //   };
   //   getData()
   // }, []);
+  const [imageUrl, setImageUrl] = useState("");
+
+  const validateImageUrl = (url) => {
+    const urlPattern = new RegExp('^(https?:\\/\\/)?'+ // validate protocol
+      '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+      '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+      '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+      '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+      '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+    return !!urlPattern.test(url);
+  };
 
   const session = useSession();
 
@@ -67,6 +74,13 @@ const Dashboard = () => {
     const desc = e.target[1].value;
     const img = e.target[2].value;
     const content = e.target[3].value;
+
+    if (!validateImageUrl(img)) {
+      alert("Please enter a valid image URL.");
+      return;
+    }
+  
+    setImageUrl(img);
 
     try {
       await fetch("/api/posts", {
@@ -106,7 +120,8 @@ const Dashboard = () => {
             : data?.map((post) => (
               <div className={styles.post} key={post._id}>
                 <div className={styles.imgContainer}>
-                  <Image src={post.img} alt="" width={200} height={100} />
+                  {/* <Image src={post.img} alt="" width={200} height={100} /> */}
+                  <Image src={validateImageUrl(post.img) ? post.img : "/default-placeholder.png"} alt="" width={200} height={100} />
                 </div>
                 <h4 className={styles.postTitle}>{post.title}</h4>
                 <span
