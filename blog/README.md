@@ -34,3 +34,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Project Setup
+
+Before you can run this project locally, you'll need to set up a few environment variables. These variables are used for configuration and are essential for the proper functioning of the application.
+
+### Environment Variables
+
+1. `API_KEY` - This variable is used to authenticate with the external API service.
+
+   - **Expected Value**: You can obtain an API key from [API Provider's Website](https://api-provider.com). Once obtained, set it as `API_KEY` in your local environment.
+
+2. `DATABASE_URL` - This variable specifies the connection string to your database.
+
+   - **Expected Value**: Provide the URL or connection string to your local or remote database.
+
+3. `SECRET_KEY` - This variable is used for cryptographic operations.
+
+   - **Expected Value**: Generate a strong secret key for your application.
+
+### Setting Up Environment Variables
+
+To set up these environment variables in your local development environment, you can create a `.env` file in the root directory of the project and define the values there. Make sure to add the `.env` file to your project's `.gitignore` to keep it private and not push it to the repository.
