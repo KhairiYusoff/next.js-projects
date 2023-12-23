@@ -63,3 +63,15 @@ model Category{
   Posts Post[]
 }
 
+model Post{
+  id String @id @default(cuid()) @map("_id")
+  slug String @unique
+  title String
+  desc String
+  img String?
+  views Int @default(0)
+  catSlug String
+  cat Category @relation(fields:[catSlug], references:[slug])
+  userEmail String
+  user User @relation(fields:[userEmail], references:[email])
+}
