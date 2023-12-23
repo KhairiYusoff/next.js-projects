@@ -99,7 +99,7 @@ const WritePage = () => {
     <div className={styles.container}>
       <input
         type="text"
-        placeholder="Title"
+        placeholder="Your Title..."
         className={styles.input}
         onChange={(e) => setTitle(e.target.value)}
       />
