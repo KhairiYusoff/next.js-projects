@@ -5,21 +5,21 @@ export const items = {
       title: "Artistic Endeavors - A Creative Portfolio",
       desc: "Showcase your unique artistic projects and creative pursuits. Discover a world where each brushstroke tells a story and every design echoes innovation.",
       image:
-        "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
+        "https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg",
     },
     {
       id: 2,
       title: "Sleek Design - Minimal Single Product",
       desc: "Elevate a single product with a minimalist design that focuses on functionality and simplicity. Perfect for spotlighting your flagship offering.",
       image:
-        "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
+        "https://images.pexels.com/photos/6177609/pexels-photo-6177609.jpeg",
     },
     {
       id: 3,
       title: "Community Impact - Strong Together Charity",
       desc: "Join forces for a cause with a platform dedicated to community service and charity. Make an impact and foster change through collective efforts.",
       image:
-        "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
+        "https://images.pexels.com/photos/3811977/pexels-photo-3811977.jpeg",
     },
   ],
   illustrations: [
