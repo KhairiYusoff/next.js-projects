@@ -38,3 +38,28 @@
   font-size: 24px;
   font-weight: 300;
 }
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 50px;
+  }
+  .desc {
+    font-size: 16px;
+  }
+  .container {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
