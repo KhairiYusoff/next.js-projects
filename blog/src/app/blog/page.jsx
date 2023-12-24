@@ -4,47 +4,52 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-    title: "Blog",
-    description: "This is Blog Page",
+  title: "Blog",
+  description: "This is Blog Page",
 };
 
 async function getData() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/posts`, {
+    cache: "no-store",
+  });
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/posts`, { cache: "no-store" });
+  console.log(res);
 
-    console.log(res)
+  if (!res.ok) {
+    throw new Error("Failed to fetch data!!");
+  }
 
-    if (!res.ok) {
-        throw new Error("Failed to fetch data!!");
-    }
-
-    return res.json();
+  return res.json();
 }
 
 const Blog = async () => {
-     const data = await getData()
-    return (
-        <div className={styles.mainContainer}>
-            {data.map((item) => (
-                <Link href={`/blog/${item._id}`} className={styles.container} key={item.id}>
-                    <div className={styles.imageContainer}>
-                        <Image
-                            src={item.img}
-                            alt=""
-                            width={400}
-                            height={250}
-                            className={styles.image}
-                        />
-                    </div>
-                    <div className={styles.content}>
-                        <h1 className={styles.title}>{item.title}</h1>
-                        <p className={styles.desc}>{item.desc}</p>
-                        <p className={styles.desc}>{item.content}</p>
-                    </div>
-                </Link>
-            ))}
-        </div>
-    );
+  const data = await getData();
+  return (
+    <div className={styles.mainContainer}>
+      {data.map((item) => (
+        <Link
+          href={`/blog/${item._id}`}
+          className={styles.container}
+          key={item.id}
+        >
+          <div className={styles.imageContainer}>
+            <Image
+              src={item.img}
+              alt=""
+              width={400}
+              height={250}
+              className={styles.image}
+            />
+          </div>
+          <div className={styles.content}>
+            <h1 className={styles.title}>{item.title}</h1>
+            <p className={styles.desc}>{item.desc}</p>
+            <p className={styles.desc}>{item.content}</p>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
 };
 
 export default Blog;
