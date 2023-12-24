@@ -48,22 +48,22 @@ export const items = {
   websites: [
     {
       id: 1,
-      title: "Creative Portfolio",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      title: "Digital Dreamscape - Creative Portfolio Website",
+      desc: "Enter a digital realm where creativity knows no bounds. Our portfolio website is a gateway to a world where imagination takes digital form, showcasing the pinnacle of artistic expression.",
       image:
         "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
     },
     {
       id: 2,
-      title: "Minimal Single Product",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      title: "Zen Space - Minimal Product Page",
+      desc: "Experience tranquility and focus with a product page that embodies Zen principles. It's a minimalist's haven, where product storytelling is woven into a tapestry of clean design and serene aesthetics.",
       image:
         "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
     },
     {
       id: 3,
-      title: "Strong Together Charity",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      title: "United for Good - Nonprofit Organization Website",
+      desc: "Discover a digital hub for change-makers and philanthropists alike. Our nonprofit website serves as a beacon of hope, rallying communities towards common goals for the greater good.",
       image:
         "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
     },
