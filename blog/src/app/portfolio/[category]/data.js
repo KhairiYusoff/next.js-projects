@@ -50,22 +50,20 @@ export const items = {
       id: 1,
       title: "Digital Dreamscape - Creative Portfolio Website",
       desc: "Enter a digital realm where creativity knows no bounds. Our portfolio website is a gateway to a world where imagination takes digital form, showcasing the pinnacle of artistic expression.",
-      image:
-        "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
+      image: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg",
     },
     {
       id: 2,
       title: "Zen Space - Minimal Product Page",
       desc: "Experience tranquility and focus with a product page that embodies Zen principles. It's a minimalist's haven, where product storytelling is woven into a tapestry of clean design and serene aesthetics.",
-      image:
-        "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
+      image: "https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg",
     },
     {
       id: 3,
       title: "United for Good - Nonprofit Organization Website",
       desc: "Discover a digital hub for change-makers and philanthropists alike. Our nonprofit website serves as a beacon of hope, rallying communities towards common goals for the greater good.",
       image:
-        "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
+        "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg",
     },
   ],
 };
