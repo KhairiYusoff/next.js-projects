@@ -25,22 +25,22 @@ export const items = {
   illustrations: [
     {
       id: 1,
-      title: "Creative Portfolio",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      title: "Visions of Imagination - Artistic Portfolio",
+      desc: "Embark on a visual journey through the canvas of creativity. Our portfolio presents a symphony of colors and concepts, bringing to life illustrations that captivate and inspire.",
       image:
         "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
     },
     {
       id: 2,
-      title: "Minimal Single Product",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      title: "Essence of Elegance - Single Product Showcase",
+      desc: "Unveil the elegance of simplicity with our illustration focused on the sublime beauty of a single product. Witness the allure of minimalism in a dance of delicate lines and soft shadows.",
       image:
         "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
     },
     {
       id: 3,
-      title: "Strong Together Charity",
-      desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+      title: "Harmony of Hearts - Charity Initiative",
+      desc: "Our illustrations echo the heartbeat of altruism, drawing attention to noble causes. Join a visual campaign that illustrates the power of unity and the spirit of giving.",
       image:
         "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
     },
