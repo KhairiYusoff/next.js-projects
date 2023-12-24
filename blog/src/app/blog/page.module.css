@@ -9,9 +9,6 @@
   object-fit: cover;
 }
 
-.content {
-}
-
 .title {
   margin-bottom: 10px;
   padding: 10px;
@@ -21,4 +18,29 @@
   font-size: 18px;
   color: #999;
   padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainContainer {
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .image {
+    max-width: 300px;
+  }
 }
