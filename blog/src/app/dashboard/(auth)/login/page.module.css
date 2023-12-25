@@ -68,3 +68,12 @@
 .google:hover {
   background-color: rgba(228, 97, 50, 0.803);
 }
+
+@media screen and (max-width: 640px) {
+  .title {
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}
