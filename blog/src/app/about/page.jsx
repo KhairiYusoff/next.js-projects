@@ -29,34 +29,39 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>Who Are We?</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae. A
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ducimus quae dolor, optio voluptatibus magnam iure esse tempora
-            beatae, a suscipit eos. Animi quibusdam cum omnis officiis
+            At the heart of every successful digital venture lies a story - a
+            unique narrative that captures the essence of ideas and transforms
+            them into captivating digital experiences. Our team specializes in
+            weaving these narratives through cutting-edge technology and
+            creative design. We believe in the power of storytelling to connect,
+            engage, and inspire. Our journey began with a simple yet profound
+            realization: in the digital world, stories are not just told; they
+            are experienced. This understanding drives our approach to every
+            project, whether it’s developing visually stunning websites,
+            crafting user-centric mobile applications, or creating interactive
+            digital content. We don't just build digital solutions; we create
+            digital experiences that tell your story in the most engaging way
+            possible.
             <br />
             <br />
-            voluptatum quo ea eveniet? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ducimus quae dolor, optio voluptatibus magnam iure
-            esse tempora beatae, a suscipit eos. Animi quibusdam cum omnis
-            officiis voluptatum quo ea eveniet?
           </p>
         </div>
         <div className={styles.item}>
           <h1 className={styles.title}>What We Do?</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
-            suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
-            eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. -
-            Creative Illustrations
+            Creative Storytelling: We don't just share your story; we bring it
+            to life with compelling narratives and engaging content.
             <br />
-            <br /> - Dynamic Websites
+            <br /> - Innovative Solutions: Our team constantly explores the
+            latest technologies to deliver dynamic, user-friendly digital
+            products.
             <br />
-            <br /> - Fast and Handy
+            <br /> - Quality and Precision: We pride ourselves on our attention
+            to detail and our commitment to excellence.
             <br />
-            <br /> - Mobile Apps
+            <br /> - Client Partnership: Your vision is our mission. We
+            collaborate closely with you at every step to ensure your goals are
+            achieved.
           </p>
           <Button url="/contact" text="Contact" />
         </div>
