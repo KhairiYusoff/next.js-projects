@@ -9,15 +9,15 @@
 
 .post {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   justify-content: space-between;
   margin: 50px 0px;
 }
 
 .imgContainer {
-  width: 200px; 
+  width: 200px;
   height: 100px;
-  position: relative; 
+  position: relative;
 }
 
 .img {
@@ -58,6 +58,19 @@
 }
 
 .postTitle {
-  flex-grow: 1; 
-  margin:0 10px; 
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .postTitle {
+    display: none;
+  }
 }

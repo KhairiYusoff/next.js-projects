@@ -6,7 +6,6 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-
 const Dashboard = () => {
   //OLD WAY TO FETCH DATA
 
@@ -35,12 +34,15 @@ const Dashboard = () => {
   const [imageUrl, setImageUrl] = useState("");
 
   const validateImageUrl = (url) => {
-    const urlPattern = new RegExp('^(https?:\\/\\/)?'+ // validate protocol
-      '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-      '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-      '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-      '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-      '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+    const urlPattern = new RegExp(
+      "^(https?:\\/\\/)?" + // validate protocol
+        "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
+        "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
+        "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
+        "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
+        "(\\#[-a-z\\d_]*)?$",
+      "i"
+    ); // fragment locator
     return !!urlPattern.test(url);
   };
 
@@ -79,7 +81,7 @@ const Dashboard = () => {
       alert("Please enter a valid image URL.");
       return;
     }
-  
+
     setImageUrl(img);
 
     try {
@@ -114,30 +116,26 @@ const Dashboard = () => {
   if (session.status === "authenticated") {
     return (
       <div className={styles.container}>
-        <div className={styles.posts}>
-          {isLoading
-            ? "loading"
-            : data?.map((post) => (
-              <div className={styles.post} key={post._id}>
-                <div className={styles.imgContainer}>
-                  {/* <Image src={post.img} alt="" width={200} height={100} /> */}
-                  <Image src={validateImageUrl(post.img) ? post.img : "/default-placeholder.png"} alt="" width={200} height={100} />
-                </div>
-                <h4 className={styles.postTitle}>{post.title}</h4>
-                <span
-                  className={styles.delete}
-                  onClick={() => handleDelete(post._id)}
-                >
-                  DELETE
-                </span>
-              </div>
-            ))}
-        </div>
         <form className={styles.new} onSubmit={handleSubmit}>
           <h1>Add New Post</h1>
-          <input type="text" placeholder="Title" className={styles.input} required />
-          <input type="text" placeholder="Desc" className={styles.input} required />
-          <input type="text" placeholder="Image" className={styles.input} required />
+          <input
+            type="text"
+            placeholder="Title"
+            className={styles.input}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Desc"
+            className={styles.input}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Image"
+            className={styles.input}
+            required
+          />
           <textarea
             placeholder="Content"
             className={styles.textArea}
@@ -147,6 +145,34 @@ const Dashboard = () => {
           ></textarea>
           <button className={styles.button}>Send</button>
         </form>
+        <div className={styles.posts}>
+          {isLoading
+            ? "loading"
+            : data?.map((post) => (
+                <div className={styles.post} key={post._id}>
+                  <div className={styles.imgContainer}>
+                    {/* <Image src={post.img} alt="" width={200} height={100} /> */}
+                    <Image
+                      src={
+                        validateImageUrl(post.img)
+                          ? post.img
+                          : "/default-placeholder.png"
+                      }
+                      alt=""
+                      width={200}
+                      height={100}
+                    />
+                  </div>
+                  <h4 className={styles.postTitle}>{post.title}</h4>
+                  <span
+                    className={styles.delete}
+                    onClick={() => handleDelete(post._id)}
+                  >
+                    DELETE
+                  </span>
+                </div>
+              ))}
+        </div>
       </div>
     );
   }
