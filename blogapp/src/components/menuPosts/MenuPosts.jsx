@@ -15,7 +15,7 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.travel}`}>Travel</span>
           <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exploring Hidden Gems: Journey to the World's Uncharted Destinations
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
@@ -34,7 +34,7 @@ const MenuPosts = ({ withImage }) => {
             Culture
           </span>
           <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cultural Crossroads: Understanding Traditions That Bind Us Globally
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
@@ -51,7 +51,7 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.food}`}>Food</span>
           <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Culinary Delights: A Taste of Local Cuisines from Around the World
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
@@ -70,7 +70,7 @@ const MenuPosts = ({ withImage }) => {
             Fashion
           </span>
           <h3 className={styles.postTitle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Trendsetting Threads: The Evolution of Fashion in the Modern Age
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>John Doe</span>
