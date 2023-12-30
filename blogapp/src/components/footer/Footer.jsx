@@ -12,10 +12,10 @@ const Footer = () => {
           <h1 className={styles.logoText}>Khairiblog</h1>
         </div>
         <p className={styles.desc}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          necessitatibus similique aspernatur obcaecati veritatis. Aperiam cum
-          porro sequi, totam minima consequuntur, aspernatur deleniti vero
-          repellendus dorales.
+          KhairiBlog is your go-to source for fresh perspectives on style,
+          travel, and tech. Here, we merge the latest trends with timeless
+          insights, all through the unique lens of Khairi's experiences. Thank
+          you for being part of our community where curiosity meets inspiration.
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="" width={18} height={18} />
