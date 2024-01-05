@@ -37,9 +37,9 @@ const About = () => {
             engage, and inspire. Our journey began with a simple yet profound
             realization: in the digital world, stories are not just told; they
             are experienced. This understanding drives our approach to every
-            project, whether it'&apos's developing visually stunning websites,
+            project, whether it is developing visually stunning websites,
             crafting user-centric mobile applications, or creating interactive
-            digital content. We don't just build digital solutions; we create
+            digital content. We do not just build digital solutions; we create
             digital experiences that tell your story in the most engaging way
             possible.
             <br />
@@ -49,7 +49,7 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>What We Do?</h1>
           <p className={styles.desc}>
-            Creative Storytelling: We don't just share your story; we bring it
+            Creative Storytelling: We do not just share your story; we bring it
             to life with compelling narratives and engaging content.
             <br />
             <br /> - Innovative Solutions: Our team constantly explores the
