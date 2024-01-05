@@ -37,7 +37,7 @@ const About = () => {
             engage, and inspire. Our journey began with a simple yet profound
             realization: in the digital world, stories are not just told; they
             are experienced. This understanding drives our approach to every
-            project, whether it’s developing visually stunning websites,
+            project, whether it'&apos's developing visually stunning websites,
             crafting user-centric mobile applications, or creating interactive
             digital content. We don't just build digital solutions; we create
             digital experiences that tell your story in the most engaging way
