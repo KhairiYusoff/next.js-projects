@@ -29,6 +29,7 @@ import { Checkbox } from "../ui/checkbox";
 import { useRouter } from "next/navigation";
 import { createEvent, updateEvent } from "@/lib/actions/event.actions";
 import { IEvent } from "@/lib/database/models/event.model";
+import { useToast } from "../ui/use-toast";
 
 type EventFormProps = {
   userId: string;
@@ -56,6 +57,8 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
     defaultValues: initialValues,
   });
 
+  const { toast } = useToast();
+
   async function onSubmit(values: z.infer<typeof eventFormSchema>) {
     let uploadedImageUrl = values.imageUrl;
 
@@ -82,6 +85,10 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
         if (newEvent) {
           form.reset();
           router.push(`/events/${newEvent._id}/update`);
+          toast({
+            description: "Event successfully created.",
+            duration: 3000,
+          });
         }
       } catch (error) {
         console.log(error);
@@ -103,6 +110,10 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
 
         if (updatedEvent) {
           // form.reset();
+          toast({
+            description: "Event successfully updated.",
+            duration: 3000,
+          });
           router.push(`/events/${updatedEvent._id}/update`);
         }
       } catch (error) {
