@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import ProductCard from './components/ProductCard'
+import Image from "next/image";
+import Link from "next/link";
+import ProductCard from "./components/ProductCard";
+import MyImage from "./components/MyImage";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <h1>hello world</h1>
-     <Link href="/users">Users</Link> 
-     <ProductCard/>
+    <main className="">
+      <h1>hello world</h1>
+      <MyImage />
     </main>
-  )
+  );
 }
