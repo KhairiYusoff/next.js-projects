@@ -4,26 +4,43 @@ import { navLinks } from "@/constants";
 import Link from "next/link";
 import { headerLogo } from "@/assets/images";
 import Image from "next/image";
+import { hamburger } from "@/assets/icons";
 
 const Nav = () => {
   return (
-    <section className="flex justify-between items-center py-8 px-8 bg-slate-300">
-      <div>
-        <Image src={headerLogo} width={100} height={100} alt="logo" />
-      </div>
-      <div className="flex items-center">
-        {navLinks.map((item) => (
-          <Link className="mx-8" href={item.href}>
-            {item.label}
-          </Link>
-        ))}
-      </div>
-      <div className="flex gap-2">
-        <Link href="/">Sign In</Link>
-        <span>/</span>
-        <Link href="/">Explore Now</Link>
-      </div>
-    </section>
+    <header className="padding-x py-8 absolute z-10 w-full">
+      <nav className="flex justify-between items-center max-container">
+        <a href="/">
+          <Image
+            src={headerLogo}
+            alt="logo"
+            width={129}
+            height={29}
+            className="m-0 w-[129px] h-[29px]"
+          />
+        </a>
+        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+          {navLinks.map((item) => (
+            <li key={item.label}>
+              <a
+                href={item.href}
+                className="font-montserrat leading-normal text-lg text-slate-gray "
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
+          <a href="/">Sign in</a>
+          <span>/</span>
+          <a href="/">Explore now</a>
+        </div>
+        <div className="hidden max-lg:block">
+          <Image src={hamburger} alt="hamburger icon" width={25} height={25} />
+        </div>
+      </nav>
+    </header>
   );
 };
 
