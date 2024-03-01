@@ -4,7 +4,7 @@ import { CustomButton } from ".";
 
 const Hero = () => {
   return (
-    <div className="flex p-4 max-lg:flex-col max-lg:p-12">
+    <div className="flex p-4 max-lg:flex-col max-lg:p-12 h-[500px]">
       <div className="flex-1 mt-16">
         <h1 className="text-[48px] font-extrabold max-md:text-[30px]">
           Discover, reserve, and drive—effortlessly and swiftly!
