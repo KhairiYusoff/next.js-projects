@@ -8,7 +8,7 @@ export default function Home() {
       <section >
         <Nav />
       </section>
-      <section>
+      <section className='xl:padding-l wide:padding-r padding-b'>
         <Hero />
       </section>
       <section>
