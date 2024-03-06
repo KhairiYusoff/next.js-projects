@@ -1,4 +1,7 @@
+"use client"
+
 import { bigShoe1 } from '@/assets/images';
+import ShoeCard from '@/components/ShoeCard';
 import { shoes, statistics } from '@/constants'
 import Image from 'next/image'
 import React, { useState } from 'react'
@@ -36,12 +39,12 @@ const Hero = () => {
                 <div>
                     {shoes.map((image, index) => (
                         <div key={index}>
-                            {/* <ShoeCard
+                            <ShoeCard
                                 index={index}
                                 imgURL={image}
                                 changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
                                 bigShoeImg={bigShoeImg}
-                            /> */}
+                            />
                         </div>
                     ))}
                 </div>
