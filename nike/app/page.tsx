@@ -1,16 +1,35 @@
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
+import { CustomerReviews, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from "./sections";
 
 export default function Home() {
   return (
     <main className="relative">
-      <section className="text-green-500 bg-black">
+      <section >
         <Nav />
       </section>
-      <section className="min-h-screen bg-green-300">
-        <p>hero</p>
+      <section>
+        <Hero />
       </section>
-      <section className="text-green-500 bg-black padding-x padding-t pb-8">
+      <section>
+        <PopularProducts />
+      </section>
+      <section>
+        <SuperQuality />
+      </section>
+      <section>
+        <Services />
+      </section>
+      <section>
+        <SpecialOffer />
+      </section>
+      <section>
+        <CustomerReviews />
+      </section>
+      <section>
+        <Subscribe />
+      </section>
+      <section>
         <Footer />
       </section>
     </main>
