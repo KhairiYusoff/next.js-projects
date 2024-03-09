@@ -16,7 +16,7 @@ const Hero = () => {
     return (
         <div className='relative h-[88vh] bg-[url(/images/banner1.jpg)] bg-cover bg-center'>
             {showModal && <Modal hideModal={closeModalhandler} />}
-            <div className='absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.6)]'>M</div>
+            <div className='absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.6)]'></div>
             <div className='relative z-[10] flex items-center h-[100%] text-white'>
                 <div className='w-[80%] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-[2rem]'>
                     <div>
