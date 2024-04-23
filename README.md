@@ -5,7 +5,9 @@ This repository contains a collection of independent Next.js projects built for 
 ## Projects
 
 - **blog**: A Next.js blog application
+- Live Demo: [https://blog-khairisoff.vercel.app](https://blog-khairisoff.vercel.app)
 - **blogapp**: A Next.js blog application (practice)
+- Live Demo: [https://blogapp-khairisoff.vercel.app](https://blogapp-khairisoff.vercel.app)
 - **carzone**: An automotive-related Next.js project 
 - **dynamics**: Practice my coding skills
 - **eventapp**: A Next.js app for managing event tickets ordering
