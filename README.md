@@ -8,13 +8,14 @@ This repository contains a collection of independent Next.js projects built for 
   - Live Demo: [https://blog-khairisoff.vercel.app](https://khaiblog.vercel.app/)
     
 - **blogapp**: A Next.js blog application (practice)
-- Live Demo: [https://blogapp-khairisoff.vercel.app](https://blogapp-khairisoff.vercel.app)
+
   
 - **carzone**: An automotive-related Next.js project
   
 - **dynamics**: Practice my coding skills
   
 - **eventapp**: A Next.js app for managing event tickets ordering
+  - Live Demo: [https://blogapp-khairisoff.vercel.app](https://khaievent.vercel.app/)
   
 - **nike**: An e-commerce static web app
   
