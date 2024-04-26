@@ -1,35 +1,41 @@
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import { CustomerReviews, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from "./sections";
+import {
+  CustomerReviews,
+  Hero,
+  PopularProducts,
+  Services,
+  SpecialOffer,
+  Subscribe,
+  SuperQuality,
+} from "./sections";
 
 export default function Home() {
   return (
     <main className="relative">
-      <section >
-        <Nav />
-      </section>
-      <section className='xl:padding-l wide:padding-r padding-b'>
+      <Nav />
+      <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
-      <section>
+      <section className="padding">
         <PopularProducts />
       </section>
-      <section>
+      <section className="padding">
         <SuperQuality />
       </section>
-      <section>
+      <section className="padding-x py-10">
         <Services />
       </section>
-      <section>
+      <section className="padding">
         <SpecialOffer />
       </section>
-      <section>
+      <section className="bg-pale-blue padding">
         <CustomerReviews />
       </section>
-      <section>
+      <section className="padding-x sm:py-32 py-16 w-full">
         <Subscribe />
       </section>
-      <section>
+      <section className=" bg-black padding-x padding-t pb-8">
         <Footer />
       </section>
     </main>
