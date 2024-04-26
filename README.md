@@ -4,22 +4,22 @@ This repository contains a collection of independent Next.js projects built for 
 
 ## Projects
 
+
 - **blog**: A Next.js blog application
-  - Live Demo: [https://khaiblog.vercel.app/](https://khaiblog.vercel.app/){:target="_blank"}
-    
+  - Live Demo: <a href="https://khaiblog.vercel.app/" target="_blank">https://khaiblog.vercel.app/</a>
+
 - **blogapp**: A Next.js blog application (practice)
 
-  
 - **carzone**: An automotive-related Next.js project
-  
+
 - **dynamics**: Practice my coding skills
-  
+
 - **eventapp**: A Next.js app for managing event tickets ordering
-  - Live Demo: [https://khaievent.vercel.app/](https://khaievent.vercel.app/){:target="_blank"}
-  
+  - Live Demo: <a href="https://khaievent.vercel.app/" target="_blank">https://khaievent.vercel.app/</a>
+
 - **khaishoes**: An e-commerce static web app
-  - Live Demo: [https://khaishoes.vercel.app/](https://khaishoes.vercel.app/){:target="_blank"}
-    
+  - Live Demo: <a href="https://khaishoes.vercel.app/" target="_blank">https://khaishoes.vercel.app/</a>
+
 - **sports**: A sports-related Next.js application
 
 ## Getting Started
