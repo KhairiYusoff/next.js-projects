@@ -17,8 +17,9 @@ This repository contains a collection of independent Next.js projects built for 
 - **eventapp**: A Next.js app for managing event tickets ordering
   - Live Demo: [https://blogapp-khairisoff.vercel.app](https://khaievent.vercel.app/)
   
-- **nike**: An e-commerce static web app
-  
+- **khaishoes**: An e-commerce static web app
+  - Live Demo: [https://blogapp-khairisoff.vercel.app](https://khaishoes.vercel.app//)
+    
 - **sports**: A sports-related Next.js application
 
 ## Getting Started
