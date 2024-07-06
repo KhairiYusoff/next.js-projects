@@ -5,4 +5,4 @@ import CustomButton from "./CustomButton";
 import SearchBar from "./SearchBar";
 import SearchManufacturer from "./SearchManufacturer";
 
-export { Navbar, Footer, Hero, CustomButton };
+export { Navbar, Footer, Hero, CustomButton, SearchBar, SearchManufacturer };
