@@ -1,9 +1,10 @@
 import { Hero, SearchBar, ShowMore } from "@/components";
 import CarCard from "@/components/CarCard";
 import CustomFilter from "@/components/CustomFilter";
+import { HomeProps } from "@/types";
 import { fetchCars } from "@/utils";
 
-export default async function Home() {
+export default async function Home({ searchParams }: HomeProps) {
   const allCars = await fetchCars()
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
   return (
