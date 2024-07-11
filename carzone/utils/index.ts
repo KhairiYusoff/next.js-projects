@@ -17,7 +17,7 @@ export async function fetchCars(filters: FilterProps) {
     const response = await axios.request(options);
     return response.data;
   } catch (error) {
-    console.error(error);
+    console.log(error);
   }
 }
 
