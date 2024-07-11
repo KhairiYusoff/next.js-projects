@@ -7,6 +7,7 @@ import SearchManufacturer from "./SearchManufacturer";
 import CarCard from "./CarCard";
 import CustomFilter from "./CustomFilter";
 import ShowMore from "./ShowMore";
+import CarDetails from "./CarDetails";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   CarCard,
   CustomFilter,
   ShowMore,
+  CarDetails,
 };
