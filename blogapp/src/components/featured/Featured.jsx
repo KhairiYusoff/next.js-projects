@@ -1,8 +1,16 @@
+"use client";
 import React from "react";
 import styles from "./featured.module.css";
 import Image from "next/image";
 
 const Featured = () => {
+  const handleReadMoreClick = () => {
+    const categorySection = document.getElementById("category-section");
+    if (categorySection) {
+      categorySection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -22,7 +30,9 @@ const Featured = () => {
             insights into the latest tech trends, and a sprinkling of my own
             creative projects.
           </p>
-          <button className={styles.button}>Read More</button>
+          <button className={styles.button} onClick={handleReadMoreClick}>
+            Read More
+          </button>
         </div>
       </div>
     </div>

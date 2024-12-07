@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <main className={styles.container}>
       <Featured />
-      <CategoryList />
+      <div id="category-section">
+        <CategoryList />
+      </div>
       <div className={styles.content}>
         <Menu />
       </div>
